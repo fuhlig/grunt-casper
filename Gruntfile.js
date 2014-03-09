@@ -89,6 +89,13 @@ module.exports = function (grunt) {
         }
       },
 
+      smashing: {
+        options: {
+          test: false
+        },
+        src: ['test/fixtures/smashing.js']
+      },
+
       failFast : {
         options : {
           'fail-fast' : true
@@ -153,7 +160,8 @@ module.exports = function (grunt) {
     'casper:includes',
     'casper:screenshots',
     'casper:parallel',
-    'spawnFailure'
+    'spawnFailure',
+    'smashing'
   ]);
 
   grunt.registerTask('test', ['jshint', 'runtests']);
