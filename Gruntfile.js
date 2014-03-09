@@ -160,8 +160,8 @@ module.exports = function (grunt) {
     'casper:includes',
     'casper:screenshots',
     'casper:parallel',
-    'spawnFailure',
-    'smashing'
+    'casper:smashing',
+    'spawnFailure'
   ]);
 
   grunt.registerTask('test', ['jshint', 'runtests']);
