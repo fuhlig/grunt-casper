@@ -148,7 +148,7 @@ module.exports = function (grunt) {
     'casper:argsTest',
     'casperargs:baz:--foo=bar',
     'casper:pass',
-    'casper:passEngine',
+    // 'casper:passEngine',
     'casper:multiple',
     'casper:includes',
     'casper:screenshots',
@@ -156,7 +156,7 @@ module.exports = function (grunt) {
     'spawnFailure'
   ]);
 
-  grunt.registerTask('test', ['jshint', 'runtests', 'nodeunit']);
+  grunt.registerTask('test', ['jshint', 'runtests']);
 
   //Should Run Locally To Test Fail Cases - Fails Travis/Grunt
   grunt.registerTask('testFail', ['casper:fail', 'casper:failFast']);
