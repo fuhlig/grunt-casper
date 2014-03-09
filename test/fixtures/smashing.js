@@ -20,7 +20,7 @@ casper.each(breakpoints, function(self, breakpoint, index) {
     });
 
     this.then(function() {
-        this.capture('screenshots/' + breakpoint + '.jpg');
+        this.capture('tmp/screenshots/' + breakpoint + '.jpg');
     });
 });
 
